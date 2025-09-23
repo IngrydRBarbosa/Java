@@ -1,3 +1,4 @@
+package Exercicios;
 public class ex3DivisaoComResto {
     public static void main(String[] args){
         int totalDeItens = 17, capacidadeDaCaixa = 5;

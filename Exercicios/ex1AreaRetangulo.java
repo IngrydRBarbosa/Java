@@ -1,3 +1,4 @@
+package Exercicios;
 public class ex1AreaRetangulo {
     public static void main(String[] args) {
         byte base = 10;
