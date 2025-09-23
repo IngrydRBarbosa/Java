@@ -2,14 +2,13 @@ package Aula2;
 
 public class ExercicioVariaveis {
     public static void main(String[] args){
-        String Nome = "Ingryd";
-        int Idade = 20;
-        double Peso = 80;
-        double Altura = 1.60;
+        String nome = "Ingryd";
+        int idade = 20;
+        double peso = 80, altura = 1.60;
 
-        System.out.println("A funcionária " + Nome + " tem:");
-        System.out.println("Idade: " + Idade + " anos");
-        System.out.println("Altura: " + Altura + "m");
-        System.out.println("Peso: " + Peso + "kg");
+        System.out.println("A funcionária " + nome + " tem:");
+        System.out.println("Idade: " + idade + " anos");
+        System.out.println("Altura: " + altura + "m");
+        System.out.println("Peso: " + peso + "kg");
     } 
 }
