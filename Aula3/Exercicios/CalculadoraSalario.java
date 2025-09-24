@@ -1,4 +1,4 @@
-package Aula3;
+package Aula3.Exercicios;
 
 public class CalculadoraSalario {
     public static void main(String[] args) {
