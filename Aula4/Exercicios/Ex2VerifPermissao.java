@@ -2,7 +2,7 @@ package Aula4.Exercicios;
 
 public class Ex2VerifPermissao {
     public static void main(String[] args) {
-        double altura = 1.7;
+        float altura = 1.7f;
         boolean estaAcompanhada = false;
 
         if(altura >= 1.6 || estaAcompanhada) {
