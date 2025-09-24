@@ -1,4 +1,4 @@
-package Exercicios;
+package Aula3.Exercicios;
 public class ex2ConversorMoeda {
     public static void main(String[] args) {
         double valorEmDolar = 32;

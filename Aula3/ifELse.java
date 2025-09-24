@@ -1,4 +1,4 @@
-package Exercicios;
+package Aula3;
 
 public class ifELse {
     public static void main(String[] args) {
