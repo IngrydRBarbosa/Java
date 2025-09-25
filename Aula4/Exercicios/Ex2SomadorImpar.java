@@ -2,7 +2,7 @@ package Aula4.Exercicios;
 
 public class Ex2SomadorImpar {
     public static void main(String[] args) {
-        int num = 1, soma = 0;
+        int soma = 0;
 
         for(int i=0; i<=100; i++){
             if(i%2 != 0){
