@@ -12,6 +12,8 @@ public class Ex1ListaCompras {
             itens[i] = ler.nextLine();
         }
         System.out.println("========== LISTA DE COMPRAS ==========");
-        System.out.println(itens[]);
+        for(int i=1; i<=5; i++) {
+            System.out.println(itens[i]);
+        }
     }
 }
