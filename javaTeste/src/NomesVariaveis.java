@@ -3,7 +3,7 @@
 public class NomesVariaveis {
     public static void main(String[] args) {
         /*
-        Números inteiros:
+        Números inteiro
          byte = -128 a 127
          short -> int -> long (ex: 1000L)
          Números decimais:
