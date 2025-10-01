@@ -1,4 +1,4 @@
-package Aula5;
+package Aula5.Ex;
 import javax.swing.JOptionPane;
 
 public class Ex3MaiorNumero {
