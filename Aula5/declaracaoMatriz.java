@@ -6,7 +6,7 @@ public class declaracaoMatriz {
 
         for(int linha = 0; linha < tabela.length; linha ++) {
             for(int coluna = 0; coluna < tabela[linha].length; coluna++){
-                System.out.println(tabela[linha][coluna]+"\t");
+                System.out.println(tabela[linha][coluna] + "\t");
             }
             System.out.println();
         }
