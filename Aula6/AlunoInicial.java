@@ -1,13 +1,13 @@
 package Aula6;
 
 
-    public class Aluno {
+    public class AlunoInicial {
         // atributos (os campos do registro)
         String nome;
         int matricula;
         double notaFinal;
         public static void main(String[] args) {
-            Aluno aluno1 = new Aluno();
+            AlunoInicial aluno1 = new AlunoInicial();
             // Preenchendo os dados do registro
             aluno1.nome = "Carlos Pereira";
             aluno1.matricula = 201;

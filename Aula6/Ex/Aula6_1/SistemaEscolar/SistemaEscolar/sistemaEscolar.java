@@ -1,10 +1,7 @@
-package Aula6.Ex;
+package Aula6.Ex.Aula6_1.SistemaEscolar.SistemaEscolar;
 import java.util.Scanner;
 
-public class Aluno {
-    String nome;
-    int matricula;
-    double nota;
+public class sistemaEscolar {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Aluno[] turma = new Aluno[3];
@@ -20,8 +17,8 @@ public class Aluno {
         }
 
         for(int i = 0; i < turma.length; i++) {
-            System.out.printf("\n---------- DADOS DO ALUNO %d ----------\n", i+1);
-            System.out.printf("Nome: %s\nMatrícula: %d\nNota: %.2f\n", turma[i].nome, turma[i].matricula, turma[i].nota);
+            turma[i].mostrarDados(i+1);
+            turma[i].verificarAprovacao();
         }
         sc.close();
     }
