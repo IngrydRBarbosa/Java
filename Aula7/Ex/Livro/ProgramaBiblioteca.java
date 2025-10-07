@@ -1,4 +1,4 @@
-package Aula7.Ex.Ex1Livro;
+package Aula7.Ex.Livro;
 
 public class ProgramaBiblioteca {
     public static void main(String[] args) {
