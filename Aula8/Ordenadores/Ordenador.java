@@ -1,7 +1,7 @@
 package Aula8.Ordenadores;
 
 public class Ordenador {
-    // Bubble sort: o mais didático. Compara os números de dois em dois e "sobe"/flutua para a direita o maior número em cada comparação até o maior ficar no final
+    // Bubble sort: o mais didático. Compara e troca os pares vizinhos flutuando para a direita o maior número em cada comparação até o maior ficar no final
 
      public static void bubbleSort(int[] vetor) {
         int n = vetor.length;
@@ -35,6 +35,21 @@ public class Ordenador {
             vetor[indiceDoMenor] = vetor[i];
             vetor[i] = temp;
             System.out.printf("temp %d - vetor[indiceDoMenor] %d - vetor[i] %d\n\n", temp, vetor[indiceDoMenor], vetor[i]);
+        }
+    }
+
+    // Insere cada elemento na sua posição correta dentro da parte já ordenada e é mais rápido se a lista já estiver quase em ordem
+    public static void insertionSort(int[] vetor) {
+        for(int i = 1; i < vetor.length; i++) {
+            int chave = vetor[i];
+            System.out.println("Essa é a chave " + chave);
+            int j = i-1;
+            while(j >=0 && vetor[j] > chave) {
+                System.out.printf("Substituiu o vetor[%d] - %d pelo vetor [%d] - %d\n", j+1, vetor[j+1], j, vetor[j]);
+                vetor[j+1] = vetor[j];
+                j = j-1;
+            }
+            vetor[j+1] = chave;
         }
     }
 }

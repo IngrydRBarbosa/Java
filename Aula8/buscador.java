@@ -2,7 +2,7 @@ package Aula8;
 
 public class buscador {
     public static int buscaSequencial(int[] vetor, int valorProcurado) {
-        // percore o vetor do início ao fim
+        // percorre o vetor do início ao fim
         for(int i = 0; i < vetor.length; i++) {
             // se encontrar o valor
             if(vetor[i] == valorProcurado) {
