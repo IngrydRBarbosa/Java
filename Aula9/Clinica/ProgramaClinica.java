@@ -30,5 +30,6 @@ public class ProgramaClinica {
         System.out.println("Nome: " + medico2.getNome() + " \t\tSalario: " + medico2.getSalario());
         System.out.printf("Nome: %d \t\tSalario: %.2f", medico3.getNome(), medico3.getSalario());
         System.out.println("Total de médicos cadastrados: " + Medico.getTotalMedicos());
+        sc.close();
     }
 }
