@@ -22,9 +22,10 @@ public class FilaVacinacao {
         Fila filaPrioridade = new Fila(5);
         Fila filaComum = new Fila(5);
         
-        System.out.println("\n\tORGANIZANDO A FILA:");
+        System.out.println("\n\tORGANIZANDO A FILA:" + filaPrincipal.tamanho());
 
-        for (int i = 0; i<= filaPrincipal.tamanho(); i++) {
+        for (int i = 0; i< filaPrincipal.tamanho(); i++) {
+            System.out.println("\nFila principal:");
             Pessoa p = filaPrincipal.dequeue();
             if (p.getIdade() > 60) {
                 // fila prioridade
@@ -39,12 +40,12 @@ public class FilaVacinacao {
         
         System.out.println("\n\t\t* FILA PRIORIDADE *");
 
-        for (int i = 0; i <= filaPrioridade.tamanho(); i++) {
+        for (int i = 0; i < filaPrioridade.tamanho(); i++) {
             System.out.println(i +1 + "." + filaPrioridade.elemento(i).toString()); 
         }
         System.out.println("\n\t\t* FILA COMUM *");
 
-        for (int i = 0; i <= filaComum.tamanho(); i++) {
+        for (int i = 0; i < filaComum.tamanho(); i++) {
             System.out.println(i +1 + "." + filaComum.elemento(i).toString());       
         }
     }
