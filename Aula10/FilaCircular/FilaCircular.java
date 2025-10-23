@@ -1,42 +1,43 @@
-package Aula10.Fila;
+package Aula10.FilaCircular;
 
 import Aula10.Pessoa;
 
-public class Fila {
+public class FilaCircular {
     private Pessoa[] elementos;
-    private int tamanho;
     private int capacidade;
+    private int tamanho;
+    private int inicio;
+    private int fim;
 
-    public Fila(int capacidade) {
-        this.capacidade = capacidade;
+    public FilaCircular(int capacidade) {
         this.elementos = new Pessoa[capacidade];
+        this.capacidade = capacidade;
         this.tamanho = 0;
+        this.inicio = 0;
+        this.fim = -1;
     }
 
     public void enqueue(Pessoa elemento) {
-        // adiciona na fila
         if (tamanho == capacidade) {
-            System.out.println("A pilha está cheia! Não foi possível adicionar a pessoa " + elemento.getNome());
+            System.out.println("A fila está cheia! Não foi possível adicionar a pessoa " + elemento.getNome());
             return;
         }
-        elementos[tamanho] = elemento;
+        fim = (fim +1)%capacidade;
+        System.out.println(fim = (fim +1)%capacidade);
+        elementos[fim] = elemento;
         tamanho++;
         System.out.println("A pessoa " + elemento.getNome() + " foi adicionada no final da fila");
     }
 
     public Pessoa dequeue() {
-        // remove da fila
         if(isEmpty()) {
             System.out.println("A fila está vazia");
             return null;
         }
-        Pessoa p = elementos[0];
-        // desloca todos pra frente
-        for(int i = 0; i < tamanho -1; i ++) {
-            elementos[i] = elementos[i+1];
-        }
-        //esvazia o último para não ficar duplicado
-        elementos[tamanho -1] = null;
+        Pessoa p = elementos[inicio];
+        elementos[inicio] = null;
+        inicio = (inicio +1)%capacidade;
+        System.out.println((inicio +1)%capacidade);
         tamanho--;
         System.out.println("A pessoa " + p.getNome() + " foi removida do início da fila");
         return p;
@@ -48,22 +49,14 @@ public class Fila {
             System.out.println("A fila está vazia");
             return null;
         }
-        return elementos[0];
-    }
-
-    public Pessoa elemento(int i){
-        if (isEmpty()) {
-            System.out.println("A fila está vazia");
-            return null;
-        }
-        return elementos[i];
+        return elementos[inicio];
     }
 
     public boolean isEmpty() {
         return tamanho == 0;
     }
 
-    public int tamanho(){
+    public int tamanho() {
         return tamanho;
     }
 }
