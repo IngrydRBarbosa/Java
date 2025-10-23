@@ -23,8 +23,9 @@ public class FilaVacinacao {
         Fila filaComum = new Fila(5);
         
         System.out.println("\n\tORGANIZANDO A FILA:" + filaPrincipal.tamanho());
+        int tamanhoFila = filaPrincipal.tamanho(); //guarda o tamanho da fila principal para percorrer no for
 
-        for (int i = 0; i< filaPrincipal.tamanho(); i++) {
+        for (int i = 0; i< tamanhoFila; i++) {
             System.out.println("\nFila principal:");
             Pessoa p = filaPrincipal.dequeue();
             if (p.getIdade() > 60) {
